@@ -25,8 +25,15 @@ div.columns {
 }
 
 div#colm-1 {
-	background: url('../images/bw.jpg') no-repeat;
-	background-size: 100%;
+	background: url('../images/pf1lg.jpg') no-repeat;
+	background-size: contain;
+		transition: all 1.5s ease;
+
+}
+
+div#colm-1:hover, div#colm-1:focus {
+	/*background: url('../images/pf2lg.jpg') no-repeat;*/
+	/*background-size: 100%;*/
 }
 
 div#colm-2 {
@@ -121,6 +128,14 @@ div#personal-info div {
 	line-height: 20px;
 }
 
+i.icon-phone-circled {
+	font-size: 16px;
+}
+a#phone-link {
+	color:black;
+	opacity: .9;
+}
+
 /********** FOOTER **********/
 	footer {
 		background: black;
@@ -144,6 +159,12 @@ div#personal-info div {
 		text-transform: uppercase;
 		letter-spacing: 12px;
 		font-size: 60px;
+	}
+
+	hr {
+		/*color:white;*/
+		/*background-color: white;*/
+		width:0px;
 	}
 
 	div.columns-port {
@@ -212,12 +233,13 @@ div#personal-info div {
 		}
 		
 		div#cover {
-			width:50%;
+			width:80%;
 			margin: auto;
 		}
 		div#colm-1 {
-			background: url('../images/bw-md.jpg') no-repeat;
-			background-size: 100%;
+			background: url('../images/pf1md.jpg') no-repeat 50% 50%;
+			background-size: contain;
+			height:450px;
 		}
 
 		div#colm-2 {
@@ -258,9 +280,31 @@ div#personal-info div {
 			padding-right: 30px;
 		}}
 
+	@media (min-width: 850px) {
+		hr{
+			width:80%;
+			height:8px;
+			background-color: black;
+			clear:both;
+		}
+
+		hr#secondhr {
+			margin-top: 380px;
+		}
+	}
+
+	@media (min-width: 450px) {
+		hr#firsthr{
+			width:70%;
+			height:7px;
+			background-color: black;
+			clear:both;
+		}
+	}
+
 	@media (max-width: 700px) {
 		div#colm-1 {
-			height: 300px;
+			height: 420px;
 		}
 
 		div.columns-port {
@@ -293,8 +337,13 @@ div#personal-info div {
 		height: 80vh;
 		}
 
+		div#cover {
+			width:80%;
+			/*margin: auto;*/
+		}
+
 		div#colm-1 {
-			height: 250px;
+			height: 350px;
 		}
 
 		div#colm-2 {
@@ -329,7 +378,7 @@ div#personal-info div {
 	 	}
 
 		div#colm-1 {
-			height: 180px;
+			height: 280px;
 		}
 
 		p {

@@ -25,6 +25,19 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 document.addEventListener("DOMContentLoaded",
   function (event) {
 
+    var insertHtml = function (selector, snip) {
+    var targetElem = document.querySelector(selector);
+    targetElem.innerHTML = snip;
+    };
+
+    // Show loading icon inside element identified by 'selector'.
+    var showLoading = function (selector) {
+    var snip = "<div class='text-center'>";
+    snip += "<img src='images/ajax-loader-2.gif'></div>";
+    insertHtml(selector, snip);
+    };
+
+    showLoading("#content-snippet");
 
     // myGetRequest = function () {
     $ajaxUtils.sendGetRequest("snippets/home-snippet.html", 
@@ -55,15 +68,20 @@ document.addEventListener("DOMContentLoaded",
                     html += "menu.html";} else {
                       if (targetId == "#jshome") {
                         html += "home-snippet.html";
-                      } else {
-                        html += "about.html";
+                      } else { 
+                          if (targetId == "#jsexample") {
+                            html += "home-snippet.html"
+                          } else {
+                            html += "about.html";}
+                          }
                       }
-                    }
+                 
 
 
                   if (targetId == "#jsmenu" || 
                     targetId == "#jshome"|| 
-                    targetId == "#jsabout" ) {
+                    targetId == "#jsabout" ||
+                    targetId == "#jsexample") {
                         $ajaxUtils.sendGetRequest(html, 
                         function (request) {
                         document.querySelector(selector)

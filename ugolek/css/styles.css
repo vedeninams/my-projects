@@ -1,15 +1,6 @@
 body {
-	/*font-family: 'Open Sans Condensed', sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
-	/*color:grey;*/
-	/*background-color: black;*/
-
 	background-color: #171717;
-	/*background-color: yellow;*/
-	
-	/*#252729;*/
-	/*#202223;*/
-	/*transition: 3s ease-in-out;  добавим плавность переходов для всех элементов страницы*/
      transition: top 1s ease-out 0.5s;
 }
 
@@ -34,7 +25,6 @@ body {
 	.navbar-brand h1{ /*logo name */
 		text-transform: uppercase;
 		color:white;
-		/*font-weight: bold;*/
 		text-shadow: 2px 2px 10px white;
 		font-size: 4em;
 		margin-bottom: 0;
@@ -46,7 +36,6 @@ body {
 		text-transform: uppercase;
 		font-size: 1.5em;
 		margin-top:5px;
-		/*padding-bottom: 50px;	*/
 	}
 
 	.navbar-brand a:hover, .navbar-brand a:focus {
@@ -61,7 +50,6 @@ body {
 	div#right-navbar-header {
 		float:right;
 		color:yellow;
-		/*clear: both;*/
 		margin-top: 20px;
 	}
 
@@ -75,15 +63,8 @@ body {
 		margin-top: 15px;
 	}
 
-/*	li.icons {
-		transition: all 1s ease;
-	}*/
-
-
-
 	#nav-list li a {
 		color:white;
-
 		font-size: 20px;
 		text-align: center;
 		border-radius: 20px;
@@ -106,7 +87,6 @@ body {
 	}
 
 	#nav-list a:hover, #nav-list button:hover {
-		/*background-color: grey;*/
 		box-shadow: 0px 0px	70px 1px white;
 	}	
 
@@ -120,7 +100,6 @@ body {
 	}
 	#collapsable-nav {
 		border-top:0px;
-		/*padding-bottom: 0;*/
 	}
  
  	nav#header-nav {
@@ -146,7 +125,6 @@ body {
 		margin-bottom: 40px;
 	}
 
-
 	a#phone-link:focus, a#phone-link:hover {
 		box-shadow: 0px 0px	70px 1px yellow;} 
 /************ END OF THE PHONE BUTTON *******************/
@@ -161,15 +139,8 @@ body {
 	/*background-color: red;*/
 	}
 
- 	/*div#myCarousel.carousel {
-	background-color: black;	
-	}*/
-
-	
-
 	.carousel {
 	  height: 500px;
-	  /*margin-bottom: 15px;*/
 	}
 
 	div#carousel-inner div.slide {
@@ -178,13 +149,11 @@ body {
 
 
 	#carousel-inner {
-	/*background-color: red;*/
 	}
 
 	/* Since positioning the image, we need to help out the caption */
 	.carousel-caption {
 	  z-index: 10;
-	  /*background-color: red;*/
 	}
 
 	/* Declare heights because of positioning of img element */
@@ -193,70 +162,29 @@ body {
 	  background-color: #454545;
 	}
 
-#first-slide, #second-slide, #third-slide, #forth-slide, #fifth-slide {
-	/*background-color: #171717;*/
-	}
 
-	/*	.carousel-inner > .item > img {
-	  position: absolute;
-	  top: 0;
-	  left: 0;*/
-	  /*min-height:100%;
-	  min-width: 100%;}*/
-
-
-	
-
-
- 	a#background-slide.left.carousel-control {
-		/*background-color: black;*/
-	}
 
 	.slide {
- /*	position: absolute;
-	top: 0;
-	left: 0;
-	min-width:100%;*/
-    /*position: relative;*/
     display: inline-block;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    /*background-color: black;*/
  }
 
- 	div#arrow-down {
-		width:100%;
-		/*height: 20px;*/
-		/*background-color: red;*/
-		font-size: 30px;
-		color:grey;
-		text-orientation: center;
-		text-align: center;
-		opacity: .9;
-		margin-top: 15px;
-		margin-bottom: -100px;
-		/*transition: top 1s ease-out 0.5s;*/
-	}
-	div#arrow-down:hover, div#arrow-down:focus {
-		color:white;
-	}
-
-	  /*position: center;*/
-	  /*height: 500px;*/	
+	div#myCarousel {
+		margin-bottom: 50px;
+	}	
 /* END OF CUSTOMIZE THE CAROUSEL
 
 /* CUSTOMIZE THE MARKETING
 -------------------------------------------------- */
- /*#pctr-3 {
-	background:url('../images/dishes/drinks/drink-1.2.jpg');
-	background-position:center;*/
-div#about {
-	color:white;
-	text-align: center;
-	font-size: 65px;
-	margin-bottom: -50px;
-}
+
+	div#about {
+		color:white;
+		text-align: center;
+		font-size: 65px;
+		margin-bottom: -50px;
+	}
 
 	.featurette-divider {
 	  margin: 80px 0 40px 0; 
@@ -275,7 +203,6 @@ div#about {
 	div.marketing-tiles p {
 		font-size: 30px;
 	}
-
 /* END OF THE CUSTOMIZE THE MARKETING
 
 
@@ -285,9 +212,6 @@ div#about {
 	}
 
 	div.jumbotron {
-		/*background: url('../images/main-1200.jpg') no-repeat;*/
-	/*	width: 1200px;
-		height: 799px;*/
 		background-color: black;
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -295,10 +219,7 @@ div#about {
 	}
 
  /************ MAIN CONTENT -TILES *******************/
-	div#home-tiles {
-		/*border: 2px solid white;*/
-		/*margin-top: 20px;*/
-	}
+
 
 	div.menu-tile {
 		border: 5px solid #A22522;
@@ -328,9 +249,6 @@ div#about {
 		text-transform: uppercase;
 		color: white;
 		font-size: 170%;
-		/*margin-bottom: 2100px;*/
-
-		/*font-weight: bold;*/
 	}
 
 	.menu-picture {
@@ -338,9 +256,8 @@ div#about {
 		background-position: center;
 	}
 
-	#specials {
+	.specials {
 		background:url('../images/dishes/desserts/dessert-3.jpg');
-		/*height:50%;*/
 		background-position: center;
 	}
 /************ END OF THE MAIN CONTENT *******************/
@@ -363,7 +280,6 @@ h2#menu-categories-title {
 	#soup {
 		background:url('../images/dishes/maincourse/bludo-10.jpg');
 		background-position: center;
-		/*min-width:100%;*/
 	}
 	#main-course {
 		background:url('../images/dishes/maincourse/bludo-3.jpg');
@@ -393,39 +309,26 @@ h2#menu-categories-title {
 	footer.panel-footer {
 		background-color:black;
 		border: 1px solid black;
-		/*border-top: 4px solid #2e2e2e;*/
 		border-radius: 0;
 		color:white; 
 	}
-
-	/*div#footer-info section {*/
-		/*padding-left: 30px;
-	}*/
 
 	footer div.container {
 		margin-top: 20px;
 	}
 
 	footer.panel-footer div.row {
-		/*border: 3px solid white;*/
 		margin-bottom: 15px;
 	}
 	footer.panel-footer div.row span.head {
 		font-size: 26px;
-		/*margin-top: 10px;*/
 	}
 	footer.panel-footer div.row span {
 		font-size: 18px;
-		/*margin-top: 10px;*/
 	}
 	div.mini-container {
 		padding-left: 10px;
 	}
-
-/*	section {
-		padding: 30px;
-	}*/
-
 /*****COPYRIGHT*****/
 	div#container-copyright {
 		margin-top: 50px;
@@ -486,14 +389,11 @@ h2#menu-categories-title {
 	}
 	#fifth-slide {
 		background: url('../images/carousel/oven-2-lg.jpg') 50% 50% no-repeat; 
-	}
-}
+	}}
 
 @media (min-width: 992px) {
 		li.icons {
-		width:80px;
-	}
-}
+		width:80px;}}
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	#first-slide {
@@ -511,21 +411,13 @@ h2#menu-categories-title {
 	}
 	#fifth-slide {
 		background: url('../images/carousel/oven-2-md.jpg') 50% 50% no-repeat; 
-	}	
-
-}
+	}	}
 
 @media (min-width: 768px) and (max-width: 991px) {
 	#header-nav div.navbar-brand h1 {
 		font-size: 55px;
 	}
 
-	/*	#logo-img {
-		background: url("../images/logo-md.png") no-repeat;
-		width: 90px;
-		height: 90px;
-	}*/
-	
 	#header-nav p {
 		line-height: 30px;
 		font-size: 18px;
@@ -547,7 +439,6 @@ h2#menu-categories-title {
 	}
 
 	#first-slide {
-		/*background-color: red;*/
 		background: url('../images/carousel/oven-md.jpg') 50% 50% no-repeat; 
 		}
 	#second-slide {
@@ -561,9 +452,7 @@ h2#menu-categories-title {
 	}
 	#fifth-slide {
 		background: url('../images/carousel/oven-2-md.jpg') 50% 50% no-repeat; 
-	}
-
-}
+	}}
 
 @media (max-width: 767px) {
 	#logo-img {
@@ -593,21 +482,13 @@ h2#menu-categories-title {
 
 	#nav-list span {
 	margin-right: 15px;
-	/*margin-bottom: 0px;*/
 	}
 
 	#nav-list li a span{
 	margin-bottom: 0px;
 		}
 
- /*	div#phone-button {
-		margin-bottom: 40px;
-	}*/
- /*	#myCarousel {
-	margin-top: 100px;
-	}*/
 	#first-slide {
-		/*background-color: red;*/
 		background: url('../images/carousel/oven-sm.jpg') 50% 50% no-repeat; 
 		}
 	#second-slide {
@@ -632,11 +513,6 @@ h2#menu-categories-title {
 	  	margin: 25px 0 0px 0; 
 	}
 
-/*	h2#featurette-heading {
-		font-size: 9px;
-		line-height: .9;
-	}
-*/
 	div.marketing-tiles {
 		margin-bottom: 15px;
 	}
@@ -661,12 +537,10 @@ h2#menu-categories-title {
 
 	div#main-content {
 		margin-top: 40px;
-		/*margin-bottom: 2100px;*/
 	}
 
 	div#home-tiles div {
 		margin-bottom: 10px;
-		/*margin-top: -5px;*/
 	}
 
 	div.menu-tile {
@@ -695,14 +569,11 @@ h2#menu-categories-title {
 	}
 
 	footer div#social-icons, footer div#footer-copyright {
-		/*float:none;*/
 		text-align: center;
-		/*color:green;*/
 	}
 	div#container-copyright {
 		margin-top: 0px;
-	}
-}
+	}}
 
 @media (max-width: 415px) {
 	#header-nav div h1 {
@@ -712,14 +583,6 @@ h2#menu-categories-title {
 	#header-nav div p {
 	font-size: 18px;
 	line-height: 20px;
-	}
-
- /*	div#left-navbar-header {
-	margin-bottom: 80px;
-	}*/
-	/*.navbar-brand h1, .navbar-brand p {
-	/*font-size: .7em;*/
-	
-} 
+	}	} 
 
 
